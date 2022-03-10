@@ -1,0 +1,36 @@
+
+// One dark theme for terminal
+
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
+
+// Customize GRUB
+
+ * install Grub Customizer # You can use ubuntu store
+	
+ * move in /boot/grub the folder themes or insert in it the theme folder
+ 
+ * lunch the app, select the theme and save
+ 
+// Customize Look and Feel
+
+	* Install Tweaks   		#Store
+	
+	* Move into src/share/<icons> / <themes> the packages with the themes
+	
+	* launch tweaks and change settings
+
+// IMPORTANT
+
+  If you encounter problems with the GRUB, deactivate fast start up on windows, boot Ubuntu-live
+  and use the boot repair tool you'll need to download !
+
+
+// Consolas Font
+
+wget -O /tmp/YaHei.Consolas.1.12.zip https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/uigroupcode/YaHei.Consolas.1.12.zip
+unzip /tmp/YaHei.Consolas.1.12.zip
+sudo mkdir -p /usr/share/fonts/consolas
+sudo mv YaHei.Consolas.1.12.ttf /usr/share/fonts/consolas/
+sudo chmod 644 /usr/share/fonts/consolas/YaHei.Consolas.1.12.ttf
+cd /usr/share/fonts/consolas
+sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
