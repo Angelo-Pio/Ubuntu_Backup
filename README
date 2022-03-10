@@ -15,7 +15,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-termin
 
 	* Install Tweaks   		#Store
 	
-	* Move into src/share/<icons> / <themes> the packages with the themes
+	* Move into usr/share/<icons> / <themes> the packages with the themes
 	
 	* launch tweaks and change settings
 
