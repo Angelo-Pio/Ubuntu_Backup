@@ -34,3 +34,11 @@ sudo mv YaHei.Consolas.1.12.ttf /usr/share/fonts/consolas/
 sudo chmod 644 /usr/share/fonts/consolas/YaHei.Consolas.1.12.ttf
 cd /usr/share/fonts/consolas
 sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
+
+// aliases
+
+# Open in home .bashrc, add these lines then invoke: $ . ~/bashrc   to update
+
+alias phpStorm='cd /home/angelo/PhpStormProjects'
+alias art='php artisan'
+alias gitUpdate='git add . & git commit -m ="AutoCommit" & git push'
