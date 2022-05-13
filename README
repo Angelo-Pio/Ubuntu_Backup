@@ -15,7 +15,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-termin
 
 	* Install Tweaks   		#Store
 	
-	* Move into usr/share/<icons> / <themes> the packages with the themes
+	* Move into src/share/<icons> / <themes> the packages with the themes
 	
 	* launch tweaks and change settings
 
@@ -35,10 +35,21 @@ sudo chmod 644 /usr/share/fonts/consolas/YaHei.Consolas.1.12.ttf
 cd /usr/share/fonts/consolas
 sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
 
-// aliases
+//Configs
 
-# Open in home .bashrc, add these lines then invoke: $ . ~/bashrc   to update
 
-alias phpStorm='cd /home/angelo/PhpStormProjects'
-alias art='php artisan'
-alias gitUpdate='git add . & git commit -m ="AutoCommit" & git push'
+Remember to save all aliases in bashrc
+use < . ~/.bashrc > to update after edit 
+
+
+// Dummy mic 
+
+
+    Add snd-dummy line to /etc/modules
+    Edit /etc/group and add desired user(s) to audio:x:29: line (group ID may be different I suppose)
+    Reboot for changes to take effect and verify that they remain in effect.
+
+// Script
+
+create script.sh  then run < chmod u+x script.sh >
+
