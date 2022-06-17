@@ -1,0 +1,4 @@
+ctrl + U erase line
+crtl + w erase one word
+!!  repeat last command
+ctrl + R search for a command
